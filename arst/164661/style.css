@@ -107,3 +107,7 @@ li {
   padding-right: 10px;
   color: #4c4c4cbd;
 }
+.article--footer-upper {
+  display: flex;
+  justify-content: end;
+}
