@@ -12,8 +12,8 @@
         <div class="upper-header--left">
           <li>
             <strong
-              ><img src="book.jpg" alt="book icon" class="icon" />입문자를 위한
-              HTML5</strong
+              ><img src="img/book.jpg" alt="book icon" class="icon" />입문자를
+              위한 HTML5</strong
             >
           </li>
           <span class="구분자"></span>
@@ -22,7 +22,9 @@
           <li>08-1 의미론적 태그</li>
         </div>
         <div class="upper-header--right">
-          <li><img src="home.jpg" alt="home icon" class="icon" />위키독스</li>
+          <li>
+            <img src="img/home.jpg" alt="home icon" class="icon" />위키독스
+          </li>
         </div>
       </section>
       <section class="article">
@@ -67,57 +69,105 @@
           <p class="tltle-2">문서 구조를 위한 시맨틱 태그</p>
           <hr class="hr--title-2" />
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            >의미를 명확하게 나타내는 시민택 태그는 문서 내의 콘텐츠(요소)를
+            역할 별로 구분하는 데 유용하게 사용할 수 있습니다. 사실 대부분의
+            시맨틱 태그는 컨테이너 태그인
+            <span class="code">&lt;div&gt; </span>처럼 아무런 스타일도 없이
+            단순히 콘텐츠를 감싸는 역할을 할 뿐입니다. 그러나 시맨틱 태그를
+            사용해서 머릿말, 본문, 보조 정보 등으로 문서 구조를 나눠 놓으면 웹
+            페이지를 관리하기에도 편하고, 검색 엔진의 페이지 탐색에도 도움을
+            줍니다.
+
+            <p class="인용구">
+              웹 페이지가 검색이 잘 되도록 하는 작업을 '검색 최적화 작업'이라
+              합니다.
+            </p>
           </span>
           <p class="title-3">
             영역 구분을 위한 <span class="code">&lt;section&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;section&gt; </span>태그는 연관된 콘텐츠를
+            묶어 영역을 구분하는 데 사용하는 태그입니다. 콘텐츠에 아무런
+            스타일을 추가하지 않는 컨테이너 태그로, 결과 화면만 놓 고 보면
+            <span class="code">&lt;div&gt; </span> 태그와 아무런 차이가
+            없습니다. 그러나 <span class="code">&lt;div&gt; </span> 태그는
+            내부에 포함된 요소들에 대해 아무런 정보도 나타내지 않으며,
+            <span class="code">&lt;section&gt; </span> 태그는 관련된 콘텐츠가
+            묶여 있음을 명시적으로 나타내는 태그입니다.
           </span>
           <p class="title-3">
             영역 구분을 위한 <span class="code">&lt;article&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;article&gt; </span>태그는 독립적으로 사용할
+            수 있는 연관 콘텐츠를 구분할 때 사용하는 태그입니다. 앞서 확인한
+            <span class="code">&lt;section&gt; </span> 태그 또한 연관된 콘텐츠를
+            묶는 태그였지만, <span class="code">&lt;article&gt; </span> 태그는
+            '독립적으로 사용할 수 있는' 연관 콘텐츠를 묶는다는 점에서
+            <span class="code">&lt;section&gt; </span>보다 구체적인 내용을 담는
+            태그입니다.
+
+            <p class="인용구">
+              구조적인 의미를 가지는 시맨틱 태그의 사용에는 정답이 없으므로,
+              태그의 선택은 어디까지나 사용자의 몫임을 고려해 그때그때 상황에
+              맞는 태그를 선택해주세요.
+            </p>
           </span>
           <p class="title-3">
             보조 정보를 위한 <span class="code">&lt;aside&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;aside&gt; </span> 태그는 본문 내용과
+            연관성이 적거나 관계가 없는 보조 정보를 나타내기 위해 사용하는
+            태그입니다. 주로 본문 옆에 간단하게 표시되는 사이드바를 만들거나
+            광고 배너 등을 포함하는 데 사용합니다.
           </span>
           <p class="title-3">
             머릿말을 지정하는 <span class="code">&lt;header&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;header&gt; </span> 태그는 웹 페이지에 대한
+            대표적인 설명글 또는 머릿말 등을 나타낼 때 사용하는 태그입니다. 이
+            태그는 특히나 검색 엔진의 검색에 참고가 되는 중요한 자료로써
+            사용되기도 합니다. 그렇다고 해서 문서 안에서
+            <span class="code">&lt;header&gt; </span> 태그가 단 한 번만
+            사용되어야 한다는 규칙이 있는 것은 아닙니다.
+            <span class="code">&lt;section&gt; </span>이나
+            <span class="code">&lt;article&gt; </span>을 이용해 구분한 영역
+            내에서 <span class="code">&lt;header&gt; </span> 태그를 사용하면,
+            <span class="code">&lt;header&gt; </span> 태그는 각 영역에 대한
+            대표글 또는 제목 등을 나타내는 역할을 하게 됩니다.
           </span>
           <p class="title-3">
             네비게이션 링크 <span class="code">&lt;nav&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;nav&gt; </span> 태그는 주로 링크로 이어지는
+            사이트 탐색 정보 즉 네비게이션 메뉴를 표시합니다. 특별히 정해진
+            규칙은 아니지만, 네비게이션 메뉴는 페이지 상단에 위치하는 경우가
+            대부분이므로 <span class="code">&lt;nav&gt; </span> 태그는
+            <span class="code">&lt;header&gt; </span> 태그의 안에 포함되는
+            경우가 많습니다.
+            <p class="big-code"></p>
+            <img
+              src="img/description_for_nav.jpg"
+              alt="this is what nav descript on it"
+            />
           </span>
           <p class="title-3">
             요약글을 나타내는 <span class="code">&lt;footer&gt; </span>
           </p>
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            ><span class="code">&lt;footer&gt; </span> 태그는 페이지를 만든
+            사람, 저작권 정보, 연관 링크 등을 표시하는 역할을 합니다. 태그의
+            이름만 놓고 보면 마치 페이지의 끝에 위치해야 할 것 같은 인상을
+            풍기지만, 실제로 그런 규칙이 정해져 있지는 않습니다.
+
+            <p class="인용구">
+              그러나 주로 페이지의 끝에 위치하는 경우가 가장 많은 것도
+              사실입니다.
+            </p>
           </span>
         </div>
         <div class="article article--sub">
@@ -126,9 +176,26 @@
           </p>
           <hr class="hr--title-2" />
           <span
-            >HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인
-            태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게
-            파악할 수 있는 태그입니다.
+            >앞서 살펴 본 것처럼, HTML5에는 유용한 시맨틱 태그가 많이 추가되어
+            이를 사용하면 가독성이 좋고 검색이 잘 되는 코드를 작성할 수
+            있습니다. 그리고 많은 시맨틱 태그가
+            <span class="code">&lt; div &gt; </span> 태그를 보완하는 역할을 하고
+            있습니다. 그러나 시맨틱 태그의 등장으로 인해
+            <span class="code">&lt; div &gt; </span> 태그가 쓸모없는 태그로
+            전락하게 된 것은 아닙니다. 웹 페이지를 만듦에 있어 무엇보다 중요한
+            것은 콘텐츠입니다. 시맨틱 태그를 사용하지 않는다고 해서 콘텐츠에
+            문제가 발생하는 것은 아니므로 기존에
+            <span class="code">&lt; div &gt; </span> 태그를 사용하고 있었다면
+            <span class="code">&lt; div &gt; </span> 태그를 유지해도 문제가 되지
+            않습니다. 또한 <span class="code">&lt; div &gt; </span> 태그에 id나
+            class 등을 추가해 의미를 부여할 수도 있습니다.
+          </span>
+          <br />
+          <span>
+            새로운 태그들은 단지 <span class="code">&lt; div &gt; </span> 태그를
+            대체하기 위해 만들어진 것이 아닌, 브라우저가 콘텐츠를 이해하는
+            새로운 방식으로써 등장한 것들이라는 사실을 잊지 말고 상황에 맞게
+            태그를 선택하는 연습을 해가면서 공부하시길 추천합니다.
           </span>
         </div>
         <div class="article--footer-upper">
