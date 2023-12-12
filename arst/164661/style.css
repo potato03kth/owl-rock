@@ -5,10 +5,18 @@ html {
   --main-quote-color: #e5e5e5;
   --link-color: #219ce6;
 }
+.main-contents {
+  /* width: 40%; */
+  /* margin-left: 30%; */
+  position: relative;
+}
 
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin-top: 15px;
 }
 
 .인용구 {
@@ -21,10 +29,19 @@ body {
   border-right: none;
   border-bottom: none;
   padding-left: 24px;
+  margin: 20px;
+  margin-left: 0px;
+  color: #4c4c4c;
 }
-a:visited,
-a:link {
+a.footer--a:visited,
+a.footer--a:link {
   color: var(--link-color);
+  text-decoration: none;
+}
+a.upper-header--left--a:visited,
+a.upper-header--left--a:link {
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 .tltle-1 {
   font-size: 24px;
@@ -35,15 +52,58 @@ a:link {
   font-size: 22px;
   font-weight: 700;
   line-height: 30px;
+  margin-top: 50px;
 }
 .title-3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 28px;
+  margin-top: 50px;
+  margin-bottom: 18px;
 }
 div.article--sub > span {
   line-height: 27px;
 }
 .code {
   font-family: "consolas";
+  color: #c7254e;
+  background-color: #f2f2f2;
+}
+hr.hr--title-2 {
+  height: 1px;
+  border: none;
+  color: black;
+  background-color: #d5d5d5;
+}
+li {
+  list-style: none;
+}
+.upper-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.upper-header--left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.upper-header--right {
+  /* margin-top: 3em; */
+}
+/* .upper-header > div {
+  justify-items: flex-end;
+  align-items: flex-end;
+} */
+.upper-header > div > li {
+  font-size: 14px;
+}
+.icon {
+  height: 14px;
+}
+.구분자::before {
+  content: "|";
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #4c4c4cbd;
 }
