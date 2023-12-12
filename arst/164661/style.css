@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+html {
+  --main-text-color: #24292f;
+  --main-quote-color: #e5e5e5;
+  --link-color: #219ce6;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--main-text-color);
+}
+
+.인용구 {
+  border-left: 3px;
+  border-left: 3px, solid, var(--main-quote-color);
+  border-style: solid;
+  border-color: var(--main-quote-color);
+  border-width: 5px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 24px;
+}
+a:visited,
+a:link {
+  color: var(--link-color);
+}
+.tltle-1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.tltle-2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.title-3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+}
+div.article--sub > span {
+  line-height: 27px;
+}
+.code {
+  font-family: "consolas";
+}
