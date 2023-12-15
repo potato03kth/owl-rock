@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+html {
+    font-family:"Noto Sans KR", sans-serif;
+}
+code {
+    color: crimson;
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+  }
+  blockquote{
+    border: left 10px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
