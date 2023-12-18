@@ -142,5 +142,11 @@ button {
   font-size: 12px;
   line-height: 12px;
   color: #ffffff;
-  background-color: #31b0d5;
+  background-color: #5bc0de;
+  border: none;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 5px;
+  border-radius: 2px;
 }
