@@ -111,3 +111,36 @@ li {
   display: flex;
   justify-content: end;
 }
+
+.reply-front {
+  color: #31708f;
+}
+
+.reply-back {
+  color: #0c93e4;
+}
+
+a.reply-back {
+  text-decoration: none;
+}
+div.reply > * {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+div.reply {
+  display: none;
+}
+
+.reply > * {
+  display: inherit;
+}
+
+button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  background-color: #31b0d5;
+}
