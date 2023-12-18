@@ -133,7 +133,7 @@ div.reply {
 }
 
 .reply > * {
-  display: inherit;
+  display: inline;
 }
 
 button {
