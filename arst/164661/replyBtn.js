@@ -1,5 +1,5 @@
 // 여기에 주석 입력
-const btn = document.querySelector("button");
+const btn = document.querySelector(".button--reply");
 const reply = document.querySelector("div.reply");
 
 var NofReplier = 0;
