@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>08-1 의미론적인 태그 - 입문자를 위한 html 5</title>
-    <link rel="stylesheet" href="kth.css">
-</head>
-<body>
-  <p><strong>입문자를 위한 HTML 5</strong>  /  03장 텍스트 표시하기  /  03-1 제목과 문단</p>
-  <h2 class="title">03-1 의미론적인 태그</h2>
-  <hr class="section-line">
-  <p>ㅤ</p>
-  <h2>시맨틱 태그</h2>
-  <hr>
-  <p>HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 
-    의미론적인 태그는 이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게 파악할 수 있는 태그입니다. 
-    HTML5 이전 버전의 HTML에도 문단(<code>&lt;p&gt;</code>), 제목(<code>&lt;h&gt;</code>), 목록(<code>&lt;ul&gt;</code>과 <code>&lt;ol&gt;</code>) 등을 나타내는 의미론적인 태그들이 존재하고 있었지만, 
-    그 종류가 제한적이어서 웹 페이지에 나타낼 수 있는 콘텐츠의 유형에 비해 사용할 수 있는 태그의 개수는 
-    부족한 편이었습니다. 가령 보조 정보나 머릿말, 그리고 요약글 등을 나타내기 위한 태그는 존재하지 않았습니다. 
-    그러나 최신 웹 표준 HTML5에서는 이 점을 보완해 여러 종류의 시맨틱 태그를 추가했고, 
-    그 사용 빈도는 갈수록 증가하고 있습니다.</p>
-    <blockquote style="background: none;">'시맨틱(semantic)'은 우리말로 '의미론적인'을 뜻합니다.</blockquote>
-    <p>이 책에서는 이미 시맨틱 태그로 분류되는 몇몇 태그들을 소개하기도 했습니다. 
-      텍스트에 강조 효과를 주기 위해 사용하는 <code>&lt;mark&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> 등을 비롯해 <code>&lt;iframe&gt;</code>, <code>&lt;progress&gt;</code>
-      등도 모두 시맨틱 태그입니다. 이 절에서는 시맨틱 태그 몇 가지를 추가로 알아보고, 
-      <strong>시맨틱 태그의 사용 효과</strong>에 대해서도 알아보도록 하겠습니다.</p>
-  <p>ㅤ</p>
-  <h2>문서 구조를 위한 시맨틱 태그</h2>
-  <hr> 
-  <p>의미를 명확하게 나타내는 시민택 태그는 문서 내의 콘텐츠(요소)를 역할 별로 구분하는 데 유용하게 사용할
-    수 있습니다. 사실 대부분의 시맨틱 태그는 컨테이너 태그인 <code>&lt;div&gt;</code>처럼 아무런 스타일도 없이 단순히 콘텐츠를 
-    감싸는 역할을 할 뿐입니다. 그러나 시맨틱 태그를 사용해서 머릿말, 본문, 보조 정보 등으로 문서 구조를 나눠 
-    놓으면 웹 페이지를 관리하기에도 편하고, 검색 엔진의 페이지 탐색에도 도움을 줍니다.</p>
-    <blockquote style="background: none;">웹 페이지가 검색이 잘 되도록 하는 작업을 '검색 최적화 작업'이라 합니다.</blockquote>
+    <link rel="stylesheet" href="kth.css" />
+  </head>
+  <body>
+    <p>
+      <strong>입문자를 위한 HTML 5</strong> / 03장 텍스트 표시하기 / 03-1 제목과
+      문단
+    </p>
+    <h2 class="title">03-1 의미론적인 태그</h2>
+    <hr class="section-line" />
+    <p>ㅤ</p>
+    <h2>시맨틱 태그</h2>
+    <hr />
+    <p>
+      HTML의 시맨틱 태그란 '의미론적인 태그'라는 뜻으로, 의미론적인 태그는
+      이름만으로도 해당 태그가 문서에서 어떤 역할을 하는지 쉽게 파악할 수 있는
+      태그입니다. HTML5 이전 버전의 HTML에도 문단(<code>&lt;p&gt;</code>),
+      제목(<code>&lt;h&gt;</code>), 목록(<code>&lt;ul&gt;</code>과
+      <code>&lt;ol&gt;</code>) 등을 나타내는 의미론적인 태그들이 존재하고
+      있었지만, 그 종류가 제한적이어서 웹 페이지에 나타낼 수 있는 콘텐츠의
+      유형에 비해 사용할 수 있는 태그의 개수는 부족한 편이었습니다. 가령 보조
+      정보나 머릿말, 그리고 요약글 등을 나타내기 위한 태그는 존재하지
+      않았습니다. 그러나 최신 웹 표준 HTML5에서는 이 점을 보완해 여러 종류의
+      시맨틱 태그를 추가했고, 그 사용 빈도는 갈수록 증가하고 있습니다.
+    </p>
+    <blockquote>
+      '시맨틱(semantic)'은 우리말로 '의미론적인'을 뜻합니다.
+    </blockquote>
+    <p>
+      이 책에서는 이미 시맨틱 태그로 분류되는 몇몇 태그들을 소개하기도 했습니다.
+      텍스트에 강조 효과를 주기 위해 사용하는 <code>&lt;mark&gt;</code>,
+      <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> 등을 비롯해
+      <code>&lt;iframe&gt;</code>, <code>&lt;progress&gt;</code>
+      등도 모두 시맨틱 태그입니다. 이 절에서는 시맨틱 태그 몇 가지를 추가로
+      알아보고,
+      <strong>시맨틱 태그의 사용 효과</strong>에 대해서도 알아보도록 하겠습니다.
+    </p>
+    <p>ㅤ</p>
+    <h2>문서 구조를 위한 시맨틱 태그</h2>
+    <hr />
+    <p>
+      의미를 명확하게 나타내는 시민택 태그는 문서 내의 콘텐츠(요소)를 역할 별로
+      구분하는 데 유용하게 사용할 수 있습니다. 사실 대부분의 시맨틱 태그는
+      컨테이너 태그인 <code>&lt;div&gt;</code>처럼 아무런 스타일도 없이 단순히
+      콘텐츠를 감싸는 역할을 할 뿐입니다. 그러나 시맨틱 태그를 사용해서 머릿말,
+      본문, 보조 정보 등으로 문서 구조를 나눠 놓으면 웹 페이지를 관리하기에도
+      편하고, 검색 엔진의 페이지 탐색에도 도움을 줍니다.
+    </p>
+    <blockquote>
+      웹 페이지가 검색이 잘 되도록 하는 작업을 '검색 최적화 작업'이라 합니다.
+    </blockquote>
     <p>ㅤ</p>
     <h2>영역 구분을 위한 <code>&lt;section&gt;</code></h2>
   </body>

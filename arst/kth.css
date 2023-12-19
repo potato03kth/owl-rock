@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
-    font-family:"Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 code {
-    color: crimson;
-    background-color: #eee;
-    border-radius: 3px;
-    font-family: courier, monospace;
-    padding: 0 3px;
-  }
-  blockquote{
-    border: left 10px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-  }
-  .title{
-    font-weight: 700;
-  }
-  .section-line{
-    style="border: none; height: 3px; background-color: black;"
-  }
+  color: crimson;
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+blockquote {
+  border: left 10px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  background: none;
+}
+.title {
+  font-weight: 700;
+}
+.section-line {
+  border: none;
+  height: 3px;
+  background-color: black;
+}
