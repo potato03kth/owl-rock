@@ -1,12 +1,12 @@
 // 여기에 주석 입력
-const btn = document.querySelector(".button--reply");
+const btnReply = document.querySelector(".button--reply");
 const reply = document.querySelector("div.reply");
 
 var NofReplier = 0;
 
-const btnContext = btn.innerHTML;
+const btnContext = btnReply.innerHTML;
 
-btn.innerHTML = btnContext + " " + NofReplier;
+btnReply.innerHTML = btnContext + " " + NofReplier;
 
 function handleButtonClick() {
   if (reply.style.display == "none") {
@@ -16,4 +16,4 @@ function handleButtonClick() {
   }
 }
 
-btn.addEventListener("click", handleButtonClick);
+btnReply.addEventListener("click", handleButtonClick);

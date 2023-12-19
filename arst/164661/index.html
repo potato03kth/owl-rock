@@ -241,17 +241,45 @@
                     이 페이지에 대한 피드백을 남겨주세요
                   </div>
                 </div>
+                <hr class="hr--title-2" />
                 <div class="modal-feedback--article">
-                  <hr class="hr--title-2" />
-                  <div class="tltle-3">답장받을 이메일 주소</div>
-                  <input type="text" placeholder="Email" name="Email" />
-                  <div class="tltle-3">하고 싶은 말</div>
-                  <textarea name="contents" cols="50" rows="5"></textarea>
+                  <div class="modal-feedback--title3">답장받을 이메일 주소</div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="Email"
+                    required
+                    form="comments"
+                  />
+                  <div class="modal-feedback--title3">하고 싶은 말</div>
+                  <textarea
+                    name="contents"
+                    cols="50"
+                    rows="5"
+                    required
+                    form="comments"
+                    minlength="5"
+                  ></textarea>
+                  <div id="modal-feedback--noti">
+                    ※ 피드백은 저자에게 e-메일로 전달됩니다.
+                  </div>
+                  <form action="" id="comments"></form>
                 </div>
+                <hr class="hr--title-2" />
                 <div class="modal-feedback--footer">
-                  <hr class="hr--title-2" />
-                  <button class="button-close">close</button>
-                  <button class="button-submit">전송하기</button>
+                  <button
+                    class="button-close"
+                    id="modal-feedback--button-close"
+                  >
+                    close
+                  </button>
+                  <button
+                    class="button-submit"
+                    id="modal-feedback--button-submit"
+                    form="comments"
+                  >
+                    전송하기
+                  </button>
                 </div>
               </div>
             </div>
@@ -280,5 +308,6 @@
     </div>
     <div class="right-margin"></div>
     <script src="replyBtn.js"></script>
+    <script src="feedback.js"></script>
   </body>
 </html>

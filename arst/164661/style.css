@@ -159,17 +159,18 @@ button {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   display: none;
   justify-content: center;
 }
 .modal-feedback--wrapper {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: 10fr 1fr 40fr 1fr 10fr;
   width: 600px;
   height: 400px;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .modal-feedback--header {
@@ -184,6 +185,72 @@ button {
 }
 
 /* ! 아래의 규칙은 위의 규칙과 순서 종속함! */
-.modal-feedback--wrapper > div > hr {
+.modal-feedback--wrapper > hr {
   margin: 0px;
+}
+
+.modal-feedback--article {
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.modal-feedback--article > * {
+  box-sizing: border-box;
+  max-width: 570px;
+}
+
+#modal-feedback--noti {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.modal-feedback--title3 {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#modal-feedback--button-close,
+#modal-feedback--button-submit {
+  color: #333;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+/* ! 아래의 규칙의 위의 규칙과 순서 종속함! */
+#modal-feedback--button-submit {
+  background-color: #337ab7;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.modal-feedback--footer {
+  display: flex;
+  /* height: 30px; */
+  align-items: center;
+  justify-content: end;
+}
+
+.modal-feedback {
+  transition: all 1s;
+  transition-duration: 1s;
+}
+
+.modal-feedback--wrapper {
+  transition: all 1s;
+}
+
+.transition--modal {
+  /* transition: all 1s; */
+  background-color: rgba(0, 0, 0, 0.5);
 }
