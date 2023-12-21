@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #abstract {
+        font-size: 32px;
+        /* ha! i did it! */
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-stretch: narrower;
+        font-weight: bold;
+        font-variant: wider;
+        font-kerning: fuck everything out of order;
+      }
+    </style>
+    <title>sign in</title>
+    <datalist id="step-over-flow">
+      <option value="00" label="N at all"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+      <option value="100" label="Totaly"></option>
+    </datalist>
+  </head>
+  <body>
+    <!-- hello everyone -->
+    <header>
+      <h1 id="abstract">Create An Account</h1>
+    </header>
+    <form id="grid-form">
+      <label class="grid-cell grid-label" for="firstname"> First name</label>
+      <input
+        class="grid-cell grid-input"
+        type="text"
+        id="firstname"
+        placeholder="firstname"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="lastname">Last name</label>
+      <input
+        class="grid-cell grid-input"
+        type="text"
+        id="lastname"
+        placeholder="lastname"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="email">Email</label>
+      <input
+        class="grid-cell grid-input"
+        type="email"
+        id="email"
+        placeholder="email@example.ex"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="usename">Username</label>
+      <input
+        class="grid-cell grid-input"
+        type="text"
+        id="usename"
+        placeholder="Username"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="password"> Password</label>
+      <input
+        class="grid-cell grid-input"
+        type="password"
+        id="password"
+        placeholder="more than 10"
+        minlength="10"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="birthday">Birth date</label>
+      <input
+        class="grid-cell grid-input"
+        type="date"
+        id="birthday"
+        placeholder="birthday"
+        required
+      />
+      <!-- <label for="happy">How happy are you?</label>
+      <input
+        type="range"
+        class="range"
+        id="happy"
+        value="happy"
+        min="0"
+        max="10"
+        step="1"
+      /> -->
+
+      <label class="grid-cell grid-label" for="happyier"
+        >How happy are you?</label
+      >
+      <input
+        class="grid-cell grid-input range"
+        type="range"
+        id="happyier"
+        list="step-over-flow"
+        step="5"
+        required
+      />
+
+      <label class="grid-cell grid-label" for="favcount"
+        >What is your fav.color?</label
+      >
+      <input
+        class="grid-cell grid-input"
+        type="color"
+        id="favcount"
+        value="#ff2621"
+        required
+      />
+    </form>
+    <footer>
+      <input type="submit" value=" Create Account" form="grid-form" />
+    </footer>
+  </body>
+</html>

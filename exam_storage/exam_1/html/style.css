@@ -1,0 +1,79 @@
+html {
+  background-color: ivory;
+}
+form {
+  /* display:flex ; */
+  /* align-items: flex-start; */
+  display: grid;
+  /* grid-template-areas:
+    "a box b"
+    "a box b"
+    "a box b"; */
+  grid-template-columns: max-content max-content 200px;
+  grid-auto-rows: minmax(30px, auto);
+  align-items: stretch;
+  /* -ms-grid-row-align: 10px; */
+  grid-row-gap: 7px;
+  grid-column-gap: 10px;
+}
+form > {
+  color: ivory;
+}
+form datalist {
+  -ms-grid-layer: unset;
+}
+/* form input {
+  grid-area: box;
+  grid-column: 2 / span 1;
+} */
+
+/* form label {
+  grid-area: a;
+  grid-column: 1 / span 1;
+} */
+/* form input :nth-child(1) {
+  grid-row: 1 / 2;
+} */
+/* form input :nth-child(2) {
+  grid-row: 2 / 2;
+} */
+/* form input :nth-child(3) {
+  grid-row: 3 / 3;
+} */
+.grid-cell:nth-child(2n-1) {
+  grid-column: 1 / span 1;
+  grid-column-gap: 10px;
+}
+.grid-cell:nth-child(2n) {
+  grid-column: 2 / span 1;
+}
+.range {
+  width: 190px;
+}
+.range:hover {
+  /* width: 100px; */
+  color: tomato;
+  background-color: tomato;
+  /* scrollbar-color: tomato; */
+  flood-color: tomato;
+  column-rule-color: tomato;
+  color-scheme: tomato;
+  color-adjust: tomato;
+  stop-color: every colors are doesnt work fuck;
+  caret-color: where is the slidebar and knob color;
+}
+.grid-label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: right;
+}
+body {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 30px;
+}
