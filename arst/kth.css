@@ -2,6 +2,11 @@
 html {
   font-family: "Noto Sans KR", sans-serif;
 }
+body {
+  border-bottom: 120px;
+  border-top: 50px;
+  border-width: 300px;
+}
 code {
   color: crimson;
   background-color: #eee;
