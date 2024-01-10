@@ -3,9 +3,10 @@ html {
   font-family: "Noto Sans KR", sans-serif;
 }
 body {
-  border-bottom: 120px;
-  border-top: 50px;
-  border-width: 300px;
+  width: 890px;
+  margin: 0 auto;
+  color: #24292f;
+  font-size: 1em;
 }
 code {
   color: crimson;
@@ -14,11 +15,16 @@ code {
   font-family: courier, monospace;
   padding: 0 3px;
 }
+p {
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+}
 blockquote {
   border: left 10px solid #ccc;
   margin: 10px;
   padding: 10px;
   background: none;
+  color: #000000b3;
 }
 .title {
   font-weight: 700;
